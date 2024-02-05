@@ -3,6 +3,7 @@ import CustomDrag from "./components/CustomDrag";
 import CustomDrop from "./components/CustomDrop";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
+import Dnd from "./components/dnd";
 
 const dndList = [
   { label: "标签1", value: "值1" },
@@ -39,6 +40,7 @@ const DndPage = () => {
 function App() {
   return (
     <div className="App">
+      <Dnd />
       <DndPage></DndPage>
     </div>
   );
